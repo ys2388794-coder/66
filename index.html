@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لجرجورتي 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',sans-serif;background:linear-gradient(160deg,#ffd6e8,#e8d4ff,#ffe3d1);background-size:300% 300%;animation:bg 12s ease infinite;color:#4a1d3d;min-height:100vh;overflow-x:hidden;text-align:center}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+section{display:none;min-height:100vh;padding:28px 18px;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+section.on{display:flex;animation:in .7s ease}
+@keyframes in{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+h1{font-size:2.3rem;font-weight:900;color:#d6336c}
+h2{font-size:1.6rem;font-weight:900;color:#c2255c}
+p{font-size:1.1rem;line-height:1.9;max-width:480px}
+.card{background:rgba(255,255,255,.75);backdrop-filter:blur(8px);border-radius:24px;padding:20px 22px;box-shadow:0 10px 30px rgba(214,51,108,.2);max-width:500px;width:100%}
+.card li{list-style:none;padding:7px 0;border-bottom:1px dashed #f3b5d0;font-size:1.05rem}
+.card li:last-child{border:0}
+button{font-family:inherit;font-size:1.15rem;font-weight:700;border:0;border-radius:50px;padding:13px 30px;cursor:pointer;color:#fff;background:linear-gradient(135deg,#ff6b9d,#d6336c);box-shadow:0 6px 18px rgba(214,51,108,.4);transition:transform .2s}
+button:hover{transform:scale(1.07)}
+.big{font-size:5rem;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}20%{transform:scale(1.2)}40%{transform:scale(1)}60%{transform:scale(1.15)}}
+.float{position:fixed;bottom:-40px;font-size:1.6rem;animation:up linear forwards;pointer-events:none;z-index:0}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.row{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;min-height:90px;position:relative;width:100%}
+#no{position:absolute;transition:all .25s}
+.hug{font-size:4rem;animation:hug 1.5s infinite}
+@keyframes hug{0%,100%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(8deg) scale(1.25)}}
+.rew{font-size:1.4rem;font-weight:900;color:#d6336c;animation:pop .6s}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.tag{display:inline-block;background:#fff;border-radius:50px;padding:5px 14px;margin:4px;font-weight:700;color:#c2255c;box-shadow:0 3px 8px rgba(0,0,0,.08)}
+</style>
+</head>
+<body>
+
+<section id="s1" class="on">
+  <div class="big">💗</div>
+  <h1>جرجورتييي 🐣</h1>
+  <p>الموقع ده اتعمل ليكي إنتي بس يا هاجر.<br>جهزي نفسك... فيه حاجات كتير جواه 🎀</p>
+  <button onclick="go(2)">افتحي يا قمر ✨</button>
+</section>
+
+<section id="s2">
+  <h2>عن أحلى جرجورتي في الدنيا 🌸</h2>
+  <div class="card">
+    <ul>
+      <li>👑 اسمها هاجر.. وأنا بدلعها جرجورتي</li>
+      <li>🌄 من أسيوط.. وأحلى ناس في أسيوط</li>
+      <li>📏 165 سم من الجمال بالظبط</li>
+      <li>🎤 بتحب تغني.. وصوتها حلو</li>
+      <li>🤗 بتموت في الأحضان</li>
+      <li>🍳 بتتأخر عشان بتروق وبتعمل أكل لسارة ومريم.. يا شطورة!</li>
+      <li>📺 مسلسلنا المفضل: طوكيو ريفنجرز</li>
+    </ul>
+  </div>
+  <div>
+    <span class="tag">🎧 موسى سام</span><span class="tag">🎧 بابلو</span><span class="tag">🎧 داما</span><span class="tag">🎧 أبيوسف</span>
+  </div>
+  <button onclick="go(3)">كمّلي 💌</button>
+</section>
+
+<section id="s3">
+  <h2>أغنيتك المفضلة 🎶</h2>
+  <div class="card">
+    <p>"رِضا" لأبيوسف.. الأغنية اللي بتحبيها أكتر حاجة 🎤</p>
+    <p>غنّيلي منها شوية يا جرجورتي وأنا هسمعك 😌</p>
+    <!-- لو عايز تحط الأغنية: حط ملف reda.mp3 جنب الملف ده وشيل التعليق من السطر اللي تحت -->
+    <!-- <audio controls src="reda.mp3"></audio> -->
+  </div>
+  <button onclick="go(4)">كمّلي 🥺</button>
+</section>
+
+<section id="s4">
+  <h2>أنا آسف يا جرجورتي 🥺</h2>
+  <div class="card" style="text-align:right">
+    <ul>
+      <li>📱 آسف إني بتأخر في الرد عليكي على إنستا</li>
+      <li>🎞️ آسف إني مبردش على الريلز اللي بتبعتيها</li>
+      <li>🎙️ آسف إني مبسمعش الريكوردات كلها تقريبًا</li>
+      <li>🎬 آسف إني مبعتلكيش ريكوردات وفيديو نوتس</li>
+    </ul>
+  </div>
+  <p>إنتي بتستاهلي اهتمام أكتر من كده، وأنا هحاول أبقى أحسن علشانك 💗<br>وعارف إنك بتتأخري عشان بتتعبي في الأكل وبتهتمي بأخواتك، ودي حاجة بحبها فيكي أوي 🫶</p>
+  <button onclick="go(5)">قبلتي اعتذاري؟ 🥹</button>
+</section>
+
+<section id="s5">
+  <div class="hug">🤗</div>
+  <h2>صالحيني بقا يا كوتي يا بوتي 🧸</h2>
+  <p>خدي حضن افتراضي كبيييير لحد ما نتقابل 🫂</p>
+  <button onclick="burst(30);go(6)">متصالحين ✌️💞</button>
+</section>
+
+<section id="s6">
+  <h2>سؤال مهم جدًا... 🧐</h2>
+  <p style="font-size:1.5rem;font-weight:900">بتحبيني ولا لا؟ 💘</p>
+  <div class="row" id="row">
+    <button id="yes" onclick="go(7)">بحبك 💖</button>
+    <button id="no">لا 😒</button>
+  </div>
+  <p id="msg" style="min-height:40px;color:#c2255c;font-weight:700"></p>
+</section>
+
+<section id="s7">
+  <h2>برافو يا جرجورتي! 🏆</h2>
+  <div class="rew" id="rew">🎁 مكافأتك جاهزة</div>
+  <div class="card"><p id="rtext">اضغطي عشان تاخدي المكافآت 👇</p></div>
+  <button id="rbtn" onclick="reward()">خدي مكافأة 🎁</button>
+</section>
+
+<section id="s8">
+  <div class="big">💞</div>
+  <h1>هتوحشيني بقا يا جرجورتي 🥺</h1>
+  <p>أنا هنام كمان شوية.. تصبحي على خير يا أحلى هاجر في الدنيا 🌙</p>
+  <p style="font-weight:900;color:#d6336c">— كوتي بوتي بتاعك 🧸</p>
+</section>
+
+<script>
+function go(n){
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('on'));
+  document.getElementById('s'+n).classList.add('on');
+  window.scrollTo(0,0);
+  burst(8);
+  if(n===6) setTimeout(function(){no.style.left='55%';no.style.top='20px'},50);
+}
+function burst(n){
+  const em=['💗','💖','✨','🌸','🧸','🎀','🫶','🐣'];
+  for(let i=0;i<n;i++){
+    const e=document.createElement('div');
+    e.className='float';
+    e.textContent=em[Math.floor(Math.random()*em.length)];
+    e.style.left=Math.random()*95+'vw';
+    e.style.animationDuration=(4+Math.random()*4)+'s';
+    document.body.appendChild(e);
+    setTimeout(()=>e.remove(),8500);
+  }
+}
+setInterval(()=>burst(1),1200);
+
+const msgs=['مش هتعرفي تدوسي 😏','قربتي بس لأ 😂','جربي تاني يا جرجورتي 🤭','الزرار ده بيخاف منك 🏃‍♂️','دوسي بحبك أحسن 🥰','مفيش لا هنا يا قمر 💗'];
+let k=0;
+const no=document.getElementById('no');
+function dodge(e){
+  if(e)e.preventDefault();
+  const r=document.getElementById('row').getBoundingClientRect();
+  no.style.left=Math.random()*(Math.max(r.width,260)-110)+'px';
+  no.style.top=(Math.random()*300-120)+'px';
+  document.getElementById('msg').textContent=msgs[k++%msgs.length];
+  document.getElementById('yes').style.transform='scale('+Math.min(1+k*0.12,2.2)+')';
+  burst(3);
+}
+no.addEventListener('mouseenter',dodge);
+no.addEventListener('touchstart',dodge);
+no.addEventListener('click',dodge);
+
+const rewards=[
+ ['🌟 شطورة يا جرجورتي!','حضن دافي من بعيد 🤗'],
+ ['🏅 برافو عليكي!','بوسة على الجبين 😘 (افتراضية لحد ما نتقابل)'],
+ ['🎤 يا مغنية!','هسمع أغنية "رضا" معاكي من أولها لآخرها'],
+ ['🧸 قمر يا جرجورتي!','مكافأة: رسايل صوتية مني، ببطل كسل 😅'],
+ ['👑 أحلى هاجر!','وعد: هرد على إنستا بسرعة أكتر وهسمع الريكوردات 💍']
+];
+let ri=0;
+function reward(){
+  burst(40);
+  const r=rewards[ri];
+  document.getElementById('rew').textContent=r[0];
+  document.getElementById('rtext').textContent=r[1];
+  ri++;
+  const b=document.getElementById('rbtn');
+  if(ri>=rewards.length){b.textContent='كمّلي 💌';b.onclick=()=>go(8)}
+  else b.textContent='مكافأة تانية 🎁';
+}
+</script>
+</body>
+</html>
